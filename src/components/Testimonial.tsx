@@ -21,8 +21,8 @@ export default function Testimonial() {
           {/* Testimonial text and Contact Us button */}
           <div className="lg:w-1/2 text-center lg:text-left p-6">
             <blockquote className="text-xl md:text-2xl italic leading-relaxed text-gray-200 mb-8">
-              &ldquo;I Entered The Market With "Crypto Is A Scam!" Phrase And Mindset. My First Exchange Was Bitbns And 
-              I Was Pretty Scared. Year after year the trust developed and by now believe me I dug into the whole team and
+              &ldquo;I Entered The Market With &quot;Crypto Is A Scam!&quot; Phrase And Mindset. My First Exchange Was Bitbns And I Was Pretty Scared&rdquo;
+               Year after year the trust developed and by now believe me I dug into the whole team and
                was mesmerized how FAIZAN MASOOD was created.&rdquo;
             </blockquote>
             <button
