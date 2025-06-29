@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 export default function Footer() {
   return (
     <footer className="py-12 px-6 md:px-12 bg-gray-800 text-gray-400 text-center">
@@ -42,11 +43,12 @@ export default function Footer() {
               />
             </a>
             <a href="#" className="hover:opacity-75 transition duration-300">
-              <img
-                src="\Social.png" 
+              <Image
+                src="/Social.png" 
                 alt="LinkedIn"
+                width={24}
+                height={24}
                 className="w-6 h-6 object-contain"
-                onError={(e) => { e.currentTarget.src = 'https://placehold.co/24x24/0077B5/white?text=LI'; }} // Fallback
               />
             </a>
           </div>

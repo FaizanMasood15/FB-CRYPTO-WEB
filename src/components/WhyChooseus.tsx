@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 // presented with icons and descriptive text.
 export default function WhyChooseus() {
   return (
@@ -13,11 +14,12 @@ export default function WhyChooseus() {
           <div className="flex flex-col items-center p-6 bg-gray-900 rounded-xl shadow-lg  transition-transform duration-300 hover:scale-105">
             {/* Replaced SVG with img tag for the icon */}
             <div className="w-24 h-24 mb-4 flex items-center justify-center overflow-hidden"> {/* Added overflow-hidden for rounded image */}
-              <img
-                src="\image 10.png"
+              <Image
+                src="/image 10.png"
                 alt="Easy Deposit & Withdrawals Icon"
+                width={88} 
+                height={88}
                 className="w-22 h-22 object-contain" // Ensure image fits and scales
-                onError={(e) => { e.currentTarget.src = 'https://placehold.co/48x48/blue/white?text=Icon'; }} // Fallback
               />
             </div>
             <h3 className="text-xl font-semibold mb-2">Easy deposit & withdrawals</h3>
@@ -28,11 +30,12 @@ export default function WhyChooseus() {
           <div className="flex flex-col items-center p-6 bg-gray-900 rounded-xl shadow-lg  transition-transform duration-300 hover:scale-105">
             {/* Replaced SVG with img tag for the icon */}
             <div className="w-24 h-24 mb-4 flex items-center justify-center  overflow-hidden">
-              <img
-                src="\image 11.png" 
+              <Image
+                src="/image 11.png" 
                 alt="Fast & Simple Icon"
-                className="w-22 h-22 object-contain"
-                onError={(e) => { e.currentTarget.src = 'https://placehold.co/48x48/orange/white?text=Icon'; }} // Fallback
+                width={88} 
+                height={88}
+                className=" object-contain"
               />
             </div>
             <h3 className="text-xl font-semibold mb-2">Fast & simple</h3>
@@ -43,11 +46,12 @@ export default function WhyChooseus() {
           <div className="flex flex-col items-center p-6 bg-gray-900 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
             {/* Replaced SVG with img tag for the icon */}
             <div className="w-24 h-24 mb-4 flex items-center justify-center  overflow-hidden">
-              <img
-                src="\image 9.png"
+              <Image
+                src="/image 9.png"
                 alt="Safe & Secure Icon"
-                className="w-22 h-22 object-contain"
-                onError={(e) => { e.currentTarget.src = 'https://placehold.co/48x48/green/white?text=Icon'; }} // Fallback
+                width={88}
+                height={88}
+                className=" object-contain"
               />
             </div>
             <h3 className="text-xl font-semibold mb-2">Safe & secure</h3>

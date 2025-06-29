@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 export default function ReasonsSection() {
   return (
     <section className="py-24 px-6 md:px-18 bg-gray-900 text-white">
@@ -59,13 +60,14 @@ export default function ReasonsSection() {
           </div>
         </div>
 
-        {/* Right Section: Image of the Portfolio Overview */}
-        <div className="md:w-1/2 flex justify-center items-center p-4 py-22 "> {/* Added padding to prevent image from touching edges */}
-          <img
-            src="\portfolio-display 1.png" // IMPORTANT: You MUST place this image in your public/images folder
+       {/* Right Section: Image of the Portfolio Overview */}
+        <div className="md:w-1/2 flex justify-center items-center p-4 py-22 "> 
+          <Image 
+            src="/portfolio-display 1.png" 
             alt="Portfolio Overview"
+            width={600} 
+            height={400} 
             className="max-w-full h-auto rounded-xl shadow-lg border border-gray-700"
-            onError={(e) => { e.currentTarget.src = 'https://placehold.co/600x400/374151/E2E8F0?text=Portfolio+Image+Missing'; }} // Fallback
           />
         </div>
       </div>

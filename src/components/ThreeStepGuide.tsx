@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 // ThreeStepGuide component: Guides new users through the initial steps to start using SwapX,
 // presented as a simple three-step process.
@@ -13,11 +14,12 @@ export default function ThreeStepGuide() {
           {/* Step 1: Create an account */}
           <div className="flex flex-col items-center p-6">
             <div className="w-24 h-24 mb-4 flex items-center justify-center  overflow-hidden">
-              <img
-                src="\image 12.png" 
+              <Image
+                src="/image 12.png" 
                 alt="Safe & Secure Icon"
+                width={88}
+                height={88}
                 className="w-22 h-22 object-contain"
-                onError={(e) => { e.currentTarget.src = 'https://placehold.co/48x48/green/white?text=Icon'; }} // Fallback
               />
             </div>
             <h3 className="text-xl font-semibold mb-2">1.Create an account</h3>
@@ -27,11 +29,12 @@ export default function ThreeStepGuide() {
           {/* Step 2: Add funds to wallet */}
           <div className="flex flex-col items-center p-6">
             <div className="w-24 h-24 mb-4 flex items-center justify-center  overflow-hidden">
-              <img
-                src="\image 13.png" 
+              <Image
+                src="/image 13.png" 
                 alt="Safe & Secure Icon"
+                width={88}
+                height={88}
                 className="w-22 h-22 object-contain"
-                onError={(e) => { e.currentTarget.src = 'https://placehold.co/48x48/green/white?text=Icon'; }} // Fallback
               />
             </div>            <h3 className="text-xl font-semibold mb-2">2.Add funds to wallet</h3>
             <p className="text-gray-500">Quickly add money to your<br></br> Faizan Masood investment wallet</p>
@@ -41,10 +44,11 @@ export default function ThreeStepGuide() {
           <div className="flex flex-col items-center p-6">
             <div className="w-24 h-24 mb-4 flex items-center justify-center  overflow-hidden">
               <img
-                src="\image 14.png" 
+                src="/image 14.png" 
                 alt="Safe & Secure Icon"
+                width={88}
+                height={88}
                 className="w-22 h-22 object-contain"
-                onError={(e) => { e.currentTarget.src = 'https://placehold.co/48x48/green/white?text=Icon'; }} // Fallback
               />
             </div>            <h3 className="text-xl font-semibold mb-2">3.Start investing in crypto</h3>
             <p className="text-gray-500">Buy & Sell a variety of top coins at the best prices</p>

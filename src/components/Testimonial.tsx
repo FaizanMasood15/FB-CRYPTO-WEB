@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 // Testimonial component: Features a customer's quote and a photo,
 // designed to build trust and credibility.
@@ -15,7 +16,12 @@ export default function Testimonial() {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-green-500 rounded-2xl filter blur-lg opacity-50 z-0"></div>
             {/* Placeholder for customer image. Replace with actual image from public folder. */}
             {/* For example: <img src="/images/customer.jpg" ... /> */}
-            <img src="/WhatsApp Image 2025-05-26 at 3.55.39 PM.jpeg" alt="Customer" className="relative z-10 w-full h-auto rounded-2xl shadow-xl" />
+            <Image
+            src="/WhatsApp Image 2025-05-26 at 3.55.39 PM.jpeg" 
+            alt="Customer" 
+            width={600}
+            height={450}
+            className="relative z-10  h-auto rounded-2xl shadow-xl" />
           </div>
 
           {/* Testimonial text and Contact Us button */}

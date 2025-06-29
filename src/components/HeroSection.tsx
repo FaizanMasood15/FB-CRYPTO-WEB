@@ -1,5 +1,5 @@
-
 import React from 'react';
+import Image from 'next/image';
 export default function HeroSection() {
   return (
     <section className="relative pt-32 pb-24 px-6 md:px-18 overflow-hidden">
@@ -72,13 +72,23 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-
-        {/* Right image area: Mobile phones with app screenshots */}
+          {/* Right image area: Mobile phones with app screenshots */}
         <div className="md:w-1/2 flex justify-center items-center relative mt-2 md:mt-0">
-          {/* Placeholder images for phone screenshots. Replace with actual images from public folder. */}
-          {/* For example: <img src="/images/phone1.png" ... /> */}
-          <img src="\iPhone 12 _ 12 Pro.png" alt="Mobile App Screenshot 1" className="w-68 h-auto rounded-3xl shadow-2xl rotate-3 transform transition-transform duration-500 ease-in-out hover:scale-105" />
-          <img src="\iPhone 2.png" alt="Mobile App Screenshot 2" className="w-68 h-auto rounded-3xl shadow-2xl -ml-16 mt-20 -rotate-6 transform transition-transform duration-500 ease-in-out hover:scale-105" />
+          {/* Changed img to Next.js Image component */}
+          <Image
+            src="/iPhone 12 _ 12 Pro.png" 
+            alt="Mobile App Screenshot 1"
+            width={272} 
+            height={604}
+            className="w-68 h-auto rounded-3xl shadow-2xl rotate-3 transform transition-transform duration-500 ease-in-out hover:scale-105"
+          />
+          <Image
+            src="/iPhone 2.png" 
+            alt="Mobile App Screenshot 2"
+            width={272} 
+            height={604} 
+            className="w-68 h-auto rounded-3xl shadow-2xl -ml-16 mt-20 -rotate-6 transform transition-transform duration-500 ease-in-out hover:scale-105"
+          />
         </div>
       </div>
     </section>
